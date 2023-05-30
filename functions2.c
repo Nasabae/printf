@@ -81,10 +81,10 @@ return (write(1, "(null)", 6));
 
 while (str[z] != '\0')
 {
-if (is_printable(str[z]))
+if (sbis_printable(str[z]))
 buffer[z + offset] = str[z];
 else
-offset += append_hexa_code(str[z], buffer, z + offset);
+offset += sbappend_hexa_code(str[z], buffer, z + offset);
 
 z++;
 }

@@ -79,10 +79,10 @@ int print_pointer(va_list types, char buffer[],
 int flags, int width, int precision, int size);
 
 /* Funciotns to handle other specifiers */
-int get_flags(const char *format, int *i);
-int get_width(const char *format, int *i, va_list list);
-int get_precision(const char *format, int *i, va_list list);
-int get_size(const char *format, int *i);
+int sb_flags(const char *format, int *i);
+int sb_width(const char *format, int *i, va_list list);
+int sb_precision(const char *format, int *i, va_list list);
+int sb_size(const char *format, int *i);
 
 /*Function to print string in reverse*/
 int print_reverse(va_list types, char buffer[],
@@ -106,12 +106,12 @@ int write_unsgnd(int is_negative, int ind,
 char buffer[],
 int flags, int width, int precision, int size);
 
-/****************** UTILS ******************/
-int is_printable(char);
-int append_hexa_code(char, char[], int);
-int is_digit(char);
+/****************** 6sb_utils ******************/
+int sbis_printable(char);
+int sbappend_hexa_code(char, char[], int);
+int sbis_digit(char);
 
-long int convert_size_number(long int num, int size);
-long int convert_size_unsgnd(unsigned long int num, int size);
+long int sbconvert_size_number(long int num, int size);
+long int sbconvert_size_unsgnd(unsigned long int num, int size);
 
 #endif /* MAIN_H */

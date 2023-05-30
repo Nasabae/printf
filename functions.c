@@ -121,7 +121,7 @@ int is_negative = 0;
 long int a = va_arg(types, long int);
 unsigned long int num;
 
-a = convert_size_number(a, size);
+a = sbconvert_size_number(a, size);
 
 if (a == 0)
 buffer[z--] = '0';
