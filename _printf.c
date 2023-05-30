@@ -33,10 +33,10 @@ printed_chars++;
 else
 {
 print_buffer(buffer, &buff_ind);
-flags = get_flags(format, &z);
-width = get_width(format, &z, list);
-precision = get_precision(format, &z, list);
-size = get_size(format, &z);
+flags = sb_flags(format, &z);
+width = sb_width(format, &z, list);
+precision = sb_precision(format, &z, list);
+size = sb_size(format, &z);
 ++z;
 printed = handle_print(format, &z, list, buffer,
 flags, width, precision, size);
