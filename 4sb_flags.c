@@ -1,29 +1,13 @@
 #include "main.h"
 
 	/**
-<<<<<<< HEAD
-<<<<<<< HEAD
 	 * sb_flags - Calculates active flags
-=======
-	 * get_flags - Calculates active flags
->>>>>>> dcb03ed... sandra boateng printf
-=======
-	 * sb_flags - Calculates active flags
->>>>>>> ee4eda3599bd85b367bd7fe3e8af90b60b0876cc
 	 * @format: Formatted string in which to print the arguments
 	 * @i: take a parameter.
 	 *
 	 * Return: Flags:
 	 */
-<<<<<<< HEAD
-<<<<<<< HEAD
 	int sb_flags(const char *format, int *i)
-=======
-	int get_flags(const char *format, int *i)
->>>>>>> dcb03ed... sandra boateng printf
-=======
-	int sb_flags(const char *format, int *i)
->>>>>>> ee4eda3599bd85b367bd7fe3e8af90b60b0876cc
 	{
 		/* - + 0 # ' ' */
 		/* 1 2 4 8  16 */
