@@ -8,9 +8,20 @@
 	 * Return: Precision.
 	 */
 	int sb_size(const char *format, int *i)
+<<<<<<< HEAD
 {
 	int curr_i = *i + 1;
 	int size = 0;
+=======
+	{
+		int curr_i = *i + 1;
+		int size = 0;
+
+		if (format[curr_i] == 'l')
+			size = S_LONG;
+		else if (format[curr_i] == 'h')
+			size = S_SHORT;
+>>>>>>> 59a7d835316f3f5b0bf71b04aa9b0b235111ab44
 
 	if (format[curr_i] == 'l')
 		size = S_LONG;
