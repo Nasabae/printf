@@ -1,11 +1,7 @@
 #include "main.h"
 
 	/**
-<<<<<<< HEAD
 	 * sbis_printable - Evaluates if a char is printablie
-=======
-	 * sbis_printable - Evaluates if a char is printable
->>>>>>> 59a7d835316f3f5b0bf71b04aa9b0b235111ab44
 	 * @c: Char to be evaluated.
 	 *
 	 * Return: 1 if c is printable, 0 otherwise
